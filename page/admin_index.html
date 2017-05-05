@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+ </head>
+ <body>
+  <div class="top"></div>
+  <div class="bar">
+   <img src="../images/logo.png" width="10%" />
+   <span class="title">管理平台</span>
+   <p style="position:absolute">提醒：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+   <div class="settings">
+    <div style="display: -webkit-inline-box;display:-moz-box;">
+     欢迎，
+     <span>管理员</span>
+     <span class="log-out">【注销】</span>
+    </div>
+    <ul id="detail">
+     <li>修改密码</li>
+     <li>用户手册</li>
+     <li>维护联系人</li>
+     <li>最新通知</li>
+    </ul>
+   </div>
+  </div>
+  <!--顶部导航栏-->
+  <nav>
+   <ul>
+    <li><a href="#">录入发货信息</a></li>
+    <li class="act"><a href="#" >发货信息查询</a></li>
+    <li><a href="#">箱垛关联查询</a></li>
+   </ul>
+  </nav>
+  <!--页面内容-->
+  <div class="container">
+   <!--查询组合选择-->
+   <i class="fa fa-search" style="color:orange;font-size:large"></i>
+   <span style="font-size:large">搜索</span>
+   <br />
+   <div class="box1">
+    <div class="form-group box2">
+     <p>选择DC:</p>
+     <select class="form-control" id="searchDC"> <option>DC11</option> <option>DC21</option> <option>DC31</option> <option>DC41</option> <option>DC51</option> </select>
+    </div>
+    <div class="form-group box2">
+     <p>日期:</p>
+     <input type="text" id="datetimeStart" readonly="" />--
+     <input type="text" id="datetimeEnd" readonly="" />
+    </div>
+    <div class="form-group box2">
+     <p>酒品批次:</p>
+     <input size="16" type="text" id="winetime" readonly="" />
+    </div>
+    <div class="form-group box2">
+     <p>客户名称:</p>
+     <select class="form-control" id="searchAg"> <option>xx有限公司</option> <option>xx有限公司</option> <option>xx有限公司</option> <option>xx有限公司</option> <option>xx有限公司</option> </select>
+    </div>
+    <div class="mybutton">
+     <input class="btn btn-warning" type="submit" value="确定" id="search_button" />
+    </div>
+   </div>
+  </div>
+  <!--全部物流信息显示-->
+  <div class="container query">
+   <table class="table table-hover">
+    <tbody>
+     <tr class="tit">
+      <th >DC</th>
+      <th >酒品批次</th>
+      <th>客户</th>
+      <th>存货名称</th>
+      <th>垛数</th>
+      <th>PALLET和BOX</th>
+      <th>备注</th>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+     <tr>
+      <td>WJDC</td>
+      <td>20141010</td>
+      <td>上海xx有限公司</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+      <td>45</td>
+      <td>45</td>
+      <td>一托四层</td>
+     </tr>
+    </tbody>
+   </table>
+   <p class="jilu">每页显示10条记录</p>
+   <p class="pages"> <a href="#">&lt;&lt;</a>&nbsp; <a href="#">&lt;</a>&nbsp; <a href="#" class="active turn">1</a>&nbsp; <a href="#" class="turn">2</a>&nbsp; <a href="#">&gt;</a>&nbsp; <a href="#">&gt;&gt;</a> </p>
+  </div>
+  <!--查询结果现实-->
+  <div class="container result" style="display:none">
+   <p style="font-size:large;padding-bottom:10px;">查询结果</p>
+   <table id="q_res" class="table">
+    <tbody>
+     <tr>
+      <td>DC</td>
+      <td>WJDC</td>
+     </tr>
+     <tr>
+      <td>酒品批次</td>
+      <td>20151012</td>
+     </tr>
+     <tr>
+      <td>客户</td>
+      <td>xxxx有限公司</td>
+     </tr>
+     <tr>
+      <td>存货名称</td>
+      <td>11.3度330ML4&times;6纸箱OW</td>
+     </tr>
+     <tr>
+      <td>垛数</td>
+      <td>75</td>
+     </tr>
+     <tr>
+      <td>PALLET和BOX</td>
+      <td>75</td>
+     </tr>
+     <tr>
+      <td>备注</td>
+      <td>一托四层</td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="mybutton">
+    <input class="btn btn-warning" type="submit" value="查看详情" id="detail_button" />
+   </div>
+  </div>
+  <!--物流明细显示-->
+  <div class="container detail">
+   <table class="table table-hover" id="d_table">
+    <tbody>
+     <tr class="tit">
+      <th>托盘号</th>
+      <th>箱码</th>
+      <th>内码</th>
+      <th>始发方代码</th>
+      <th>始发方名称</th>
+      <th>客户代码</th>
+      <th>客户名称</th>
+      <th>产品代码</th>
+      <th>产品名称</th>
+      <th>发运时间</th>
+      <th>物流公司</th>
+      <th>时间戳</th>
+      <th>操作类型</th>
+     </tr>
+     <tr>
+      <td>--</td>
+      <td>4530d5b843c4a06fa9226a26993ff86e</td>
+      <td>CRN66162327</td>
+      <td>--</td>
+      <td>江阴DC</td>
+      <td>-- </td>
+      <td>无锡优势统合贸易有限公司</td>
+      <td>--</td>
+      <td>科罗娜11.3度330ML4&times;6纸箱OW</td>
+      <td>2017/04/28 14:35</td>
+      <td>--</td>
+      <td>1493361317000</td>
+      <td>--</td>
+     </tr>
+     <tr>
+      <td>--</td>
+      <td>4530d5b843c4a06fa9226a26993ff86e</td>
+      <td>CRN66162327</td>
+      <td>--</td>
+      <td>江阴DC</td>
+      <td>-- </td>
+      <td>无锡优势统合贸易有限公司</td>
+      <td>--</td>
+      <td>科罗娜11.3度330ML4&times;6纸箱OW</td>
+      <td>2017/04/28 14:35</td>
+      <td>--</td>
+      <td>1493361317000</td>
+      <td>--</td>
+     </tr>
+     <tr>
+      <td>--</td>
+      <td>4530d5b843c4a06fa9226a26993ff86e</td>
+      <td>CRN66162327</td>
+      <td>--</td>
+      <td>江阴DC</td>
+      <td>-- </td>
+      <td>无锡优势统合贸易有限公司</td>
+      <td>--</td>
+      <td>科罗娜11.3度330ML4&times;6纸箱OW</td>
+      <td>2017/04/28 14:35</td>
+      <td>--</td>
+      <td>1493361317000</td>
+      <td>--</td>
+     </tr>
+    </tbody>
+   </table>
+   <p class="jilu">每页显示10条记录</p>
+   <p class="pages"> <a href="#">&lt;&lt;</a>&nbsp; <a href="#">&lt;</a>&nbsp; <a href="#" class="turn active">1</a>&nbsp; <a href="#">&gt;</a>&nbsp; <a href="#">&gt;&gt;</a> </p>
+  </div>
+  <footer>
+   <ul class="footer-left">
+    <li>联系我们</li>
+    <li>条款细则</li>
+    <li>邮件声明</li>
+    <li>官方网站</li>
+   </ul>
+   <ul class="footer-right">
+    <li>沪北ICP备xxxxxx号网站编号</li>
+    <li>Copyright &copy;2017 xxxxxxxx</li>
+   </ul>
+  </footer>
+  <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+  <script type="text/javascript">
+      $("#datetimeStart").datetimepicker({
+          format: 'yyyy-mm-dd',
+          minView:'month',
+          language: 'zh-CN',
+          autoclose:true
+      }).on("click",function(){
+          $("#datetimeStart").datetimepicker("setEndDate",$("#datetimeEnd").val())
+      });
+      $("#datetimeEnd").datetimepicker({
+          format: 'yyyy-mm-dd',
+          minView:'month',
+          language: 'zh-CN',
+          autoclose:true,
+          startDate:new Date()
+      }).on("click",function(){
+          $("#datetimeEnd").datetimepicker("setStartDate",$("#datetimeStart").val())
+      });
+  </script>
+  <script>
+
+  $('#winetime').datetimepicker({
+    format: 'yyyymmdd',
+    weekStart: 1,
+    autoclose: true,
+    startView: 2,
+    minView: 2,
+    forceParse: false,
+    language: 'zh-CN'
+    });
+$(function() {
+
+  var h=$(".title").offset().top;
+  $(".settings").css("top",h);
+
+  $("#search_button").click(function(){
+    $('.query').hide();
+    $('.detail').hide();
+    $('.result').show();
+  });
+  $("#detail_button").click(function(){
+    $('.query').hide();
+    $('.result').hide();
+    $('.detail').show();
+  });
+})
+</script>
+ </body>
+</html>
